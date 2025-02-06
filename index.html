@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Picture This!</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -15,7 +15,17 @@
       <h1>Picture This!</h1>
       <h4>My Really Cool Blog Post</h4>
     </div>
-    <img src="images/museum.jpg" alt="placeholder">
+    <picture>
+      <source media="(max-width:320px)" srcset="images/museum-320x.jpg">
+      <source media="(max-width:480px)" srcset="images/museum-480x.jpg">
+      <source media="(max-width:720px)" srcset="images/museum-720x.jpg">
+      <source media="(max-width:960px)" srcset="images/museum-960x.jpg">
+      <source media="(max-width:960px)" srcset="images/museum-480x480.jpg">
+      <source media="(max-width:1280px)" srcset="images/museum-640x640.jpg">
+      <source media="(max-width:1600px)" srcset="images/museum-800x800.jpg">
+      <source media="(min-width:1600px)" srcset="images/museum-960x960.jpg">
+      <img src="images/museum.jpg" alt="Museum">
+    </picture>
 
   </header>
 </body>
